@@ -10,6 +10,7 @@ namespace Lab5
             {
                 int k, n;
                 bool ok;
+                Console.WriteLine("/------------Удаление строк из рваного массива------------/");
                 Console.WriteLine("Всего строк в массиве: {0}", jagArray.Length);
                 Console.WriteLine("Введите позицию с которой начать удаление строк: ");
                 do
@@ -51,6 +52,7 @@ namespace Lab5
                     }
                     else continue;
                 }
+                Console.WriteLine("Строки удалены!");
                 return jagArray2;
             }
             else Console.WriteLine("Массив пустой, операция не возможна!");
@@ -78,6 +80,7 @@ namespace Lab5
             int num;
             int rows, colums;
             bool ok;
+            Console.WriteLine("/------------Создание рваного массива------------/");
             Console.Write("Введите кол-во строк массива: ");
             do
             {
@@ -98,6 +101,7 @@ namespace Lab5
                 jagArray[i] = new int[colums];
             }
             Console.Clear();
+            Console.WriteLine("/------------Создание рваного массива------------/");
             Console.WriteLine("1) Создать массив вручную\n" +
                     "2) Создать с помощью ДСЧ\n" +
                     "3) Назад");
@@ -125,6 +129,7 @@ namespace Lab5
                         }
                     }
                     Console.Clear();
+                    Console.WriteLine("Массив создан!");
                     break;
                 case 2:
                     Random rnd = new Random();
@@ -136,6 +141,7 @@ namespace Lab5
                         }
                     }
                     Console.Clear();
+                    Console.WriteLine("Массив создан!");
                     break;
                 case 3:
                     Console.Clear();
@@ -150,6 +156,7 @@ namespace Lab5
             bool ok, exit = false;
             do
             {
+                Console.WriteLine("/------------Работа с рваными массивами------------/");
                 Console.WriteLine("1) Создать массив \n" +
                     "2) Напечатать массив \n" +
                     "3) Удалить K строк начиная с номера N \n" +
@@ -194,6 +201,7 @@ namespace Lab5
                 int colums = TwoDimArray.GetLength(1);
                 int[,] array = new int[rows, colums];
                 int num;
+                Console.WriteLine("/------------Добавление строки в начало массива------------/");
                 Console.WriteLine("1) Ввести элементы вручную\n" +
                     "2) Задать случайные значения\n" +
                     "3) Назад");
@@ -223,6 +231,7 @@ namespace Lab5
                             }
                         }
                         Console.Clear();
+                        Console.WriteLine("Строка добавлена!");
                         return array;
                     case 2:
                         Random rnd = new Random();
@@ -241,6 +250,7 @@ namespace Lab5
                                 else array[i, j] = TwoDimArray[i - 1, j];
                             }
                         }
+                        Console.WriteLine("Строка добавлена!");
                         return array;
                     case 3:
                         Console.Clear();
@@ -285,6 +295,7 @@ namespace Lab5
                 if (!ok) Console.WriteLine("Введите корректный размер массива");
             } while (!ok);
             int[,] TwoDimArray = new int[rows, colums];
+            Console.WriteLine("/------------Создание двумерного массива------------/");
             Console.WriteLine("1) Создать массив вручную\n" +
                     "2) Создать с помощью ДСЧ\n" +
                     "3) Назад");
@@ -312,6 +323,7 @@ namespace Lab5
                         }
                     }
                     Console.Clear();
+                    Console.WriteLine("Массив создан!");
                     break;
                 case 2:
                     Random rnd = new Random();
@@ -323,6 +335,7 @@ namespace Lab5
                         }
                     }
                     Console.Clear();
+                    Console.WriteLine("Массив создан!");
                     break;
                 case 3:
                     Console.Clear();
@@ -337,6 +350,7 @@ namespace Lab5
             bool ok, exit = false;
             do
             {
+                Console.WriteLine("/------------Работа с двумерными массивами------------/");
                 Console.WriteLine("1) Создать массив \n" +
                     "2) Напечатать массив \n" +
                     "3) Добавить строку в начало матрицы \n" +
@@ -397,6 +411,7 @@ namespace Lab5
                 }
                 OneDimArray = new int[OneDimArray.Length - 1];
                 array.CopyTo(OneDimArray, 0);
+                Console.WriteLine("Элемент удалён!");
             } else Console.WriteLine("Массив пустой, операция не возможна!");
             return OneDimArray;
         }
@@ -419,6 +434,7 @@ namespace Lab5
             int size;
             //int element;
             bool ok;
+            Console.WriteLine("/------------Создание одномерного массива------------/");
             Console.Write("Введите размер массива: ");
             do
             {
@@ -451,6 +467,7 @@ namespace Lab5
                             } while (!ok);
                         }
                         Console.Clear();
+                        Console.WriteLine("Массив создан!");
                         break;
                     case 2:
                         Random rnd = new Random();
@@ -459,6 +476,7 @@ namespace Lab5
                             OneDimArray[i] = rnd.Next(500);
                         }
                         Console.Clear();
+                        Console.WriteLine("Массив создан!");
                         break;
                     case 3:
                         Console.Clear();
@@ -474,6 +492,7 @@ namespace Lab5
             bool ok, exit = false;
             do
             {
+                Console.WriteLine("/------------Работа с одномерными массивами------------/");
                 Console.WriteLine("1) Создать массив \n" +
                     "2) Напечатать массив \n" +
                     "3) Удалить элемент с заданным номером \n" +
@@ -515,9 +534,10 @@ namespace Lab5
             bool ok, exit = false ;
             do
             {
+                Console.WriteLine("/------------Меню------------/");
                 Console.WriteLine("1) Работа с одномерными массивами \n" +
                     "2) Работа с двумерными массивами \n" +
-                    "3) Работа с рванными массивами\n" +
+                    "3) Работа с рваными массивами\n" +
                     "4) Выход");
                 do // Проверка на верный ввод действий
                 {
@@ -551,3 +571,4 @@ namespace Lab5
         }
     }
 }
+
