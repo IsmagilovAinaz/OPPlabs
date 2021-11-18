@@ -41,30 +41,33 @@ namespace Lab6
                         last_char2 = firstWord[firstWord.Length - 1];
                         if (last_char1 == '!' || last_char1 == '?' || last_char1 == '.' || last_char1 == ',' || last_char1 == ';' || last_char1 == ':')
                         {
-                            Console.WriteLine(last_char1);
                             lastWord = lastWord.TrimEnd(last_char1);
                             if (last_char2 == '!' || last_char2 == '?' || last_char2 == '.' || last_char2 == ',' || last_char2 == ';' || last_char2 == ':')
                             {
                                 firstWord = firstWord.TrimEnd(last_char2);
+                                Console.WriteLine("Первое слово: " + firstWord);
+                                Console.WriteLine("Последнее слово: " + lastWord);
                                 firstWord += last_char1; //Добавление последнего символа к первому слову
                                 lastWord += last_char2; //Добавление последнего символа к второму слову
                             }
                             else
                             {
+                                Console.WriteLine("Первое слово: " + firstWord);
+                                Console.WriteLine("Последнее слово: " + lastWord);
                                 firstWord += last_char1;
                             }
                         }
                         else if (last_char2 == '!' || last_char2 == '?' || last_char2 == '.' || last_char2 == ',' || last_char2 == ';' || last_char2 == ':')
                         {
-                            Console.WriteLine(last_char2);
                             firstWord = firstWord.TrimEnd(last_char2);
+                            Console.WriteLine("Первое слово: " + firstWord);
+                            Console.WriteLine("Последнее слово: " + lastWord);
                             lastWord += last_char2;
                         }
                         subStr[firstInd] = lastWord;
                         subStr[lastInd] = firstWord;
-                        Console.WriteLine("Первое слово: " + firstWord);
-                        Console.WriteLine("Последнее слово: " + lastWord);
                         str = String.Join(' ', subStr);
+                        Console.WriteLine("Строка после перестановки: " + str);
                         return str;
                     }
 
