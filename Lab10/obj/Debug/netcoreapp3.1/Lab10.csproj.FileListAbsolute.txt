@@ -1,0 +1,14 @@
+G:\ReposCPP\Labs2Kurs\Lab10\bin\Debug\netcoreapp3.1\Lab10.exe
+G:\ReposCPP\Labs2Kurs\Lab10\bin\Debug\netcoreapp3.1\Lab10.deps.json
+G:\ReposCPP\Labs2Kurs\Lab10\bin\Debug\netcoreapp3.1\Lab10.runtimeconfig.json
+G:\ReposCPP\Labs2Kurs\Lab10\bin\Debug\netcoreapp3.1\Lab10.runtimeconfig.dev.json
+G:\ReposCPP\Labs2Kurs\Lab10\bin\Debug\netcoreapp3.1\Lab10.dll
+G:\ReposCPP\Labs2Kurs\Lab10\bin\Debug\netcoreapp3.1\Lab10.pdb
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.csproj.AssemblyReference.cache
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.GeneratedMSBuildEditorConfig.editorconfig
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.AssemblyInfoInputs.cache
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.AssemblyInfo.cs
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.csproj.CoreCompileInputs.cache
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.dll
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.pdb
+G:\ReposCPP\Labs2Kurs\Lab10\obj\Debug\netcoreapp3.1\Lab10.genruntimeconfig.cache
